@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EvenButtonOnClick">
-        <activity android:name=".ActivtyKedua"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/label2">
-
-        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivtyKedua"
+            android:label="@string/label2"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
