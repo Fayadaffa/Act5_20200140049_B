@@ -43,13 +43,13 @@ public class MainActivity2 extends AppCompatActivity {
                         edtrepass.getText().toString().isEmpty())
                 {
                     //menampilkan pesan notifikasi jika seluruh EditText wajib diisi
-                    Snackbar.make(view, "Wajib isi seluruh data !!!", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(view, "Wajib isi seluruh data", Snackbar.LENGTH_LONG).show();
                 }
                 else
                 {
                     if (edtPassword.getText().toString().equals(edtrepass.getText().toString()))
                     {
-                        Toast.makeText(getApplicationContext(), "Pendaftaran Berhasil...",
+                        Toast.makeText(getApplicationContext(), "Pendaftaran Berhasil",
                                 Toast.LENGTH_LONG).show();
                         Intent a = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(a);
@@ -57,7 +57,7 @@ public class MainActivity2 extends AppCompatActivity {
                     }
                     else
                     {
-                        Snackbar.make(view, "Password dan Repassword harus sama!!!",
+                        Snackbar.make(view, "Password dan Repassword harus sama",
                                 Snackbar.LENGTH_LONG).show();
                     }
 

@@ -10,12 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EvenButtonOnClick">
         <activity
+            android:label="@string/lihatdata"
+            android:name=".ActivityLihatData"
+            android:exported="false"
+            android:parentActivityName=".Home_Activity"/>
+        <activity
+            android:name=".Home_Activity"
+            android:label="@string/datakontak"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity2"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivtyKedua"
             android:label="@string/label2"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
     if (item.getItemId() == R.id.mnDaftar)
         {
-            Intent i = new Intent(MainActivity.this,MainActivity2.class);
+            Intent i = new Intent(getApplicationContext(),MainActivity2.class);
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     b.putString("a",nama.trim());
                     b.putString("b",password.trim());
 
-                    Intent i = new Intent(getApplicationContext(),ActivtyKedua.class);
+                    Intent i = new Intent(getApplicationContext(),Home_Activity.class);
                     i.putExtras(b);
                     startActivity(i);
                 }
@@ -76,7 +75,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 }
